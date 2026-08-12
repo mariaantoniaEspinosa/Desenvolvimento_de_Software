@@ -24,50 +24,65 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="txtResultado" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="btnCE" linkSize="3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="btnC" linkSize="3" min="-2" pref="68" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnDiv" linkSize="3" max="32767" attributes="0"/>
-                          <Component id="btnBS" linkSize="3" min="-2" pref="76" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="txtResultado" max="32767" attributes="0"/>
+                          <Component id="lblValor" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace pref="78" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn7" linkSize="1" alignment="1" pref="76" max="32767" attributes="0"/>
-                          <Component id="btn4" linkSize="1" alignment="1" max="32767" attributes="0"/>
-                          <Component id="btn1" linkSize="1" alignment="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btn0" linkSize="1" pref="76" max="32767" attributes="0"/>
-                          <Component id="btn2" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btn5" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btn8" linkSize="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btn6" linkSize="1" pref="74" max="32767" attributes="0"/>
-                          <Component id="btnPonto" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btn3" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btn9" linkSize="1" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="btnSoma" linkSize="1" pref="75" max="32767" attributes="0"/>
-                          <Component id="btnIgual" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btnSub" linkSize="1" max="32767" attributes="0"/>
-                          <Component id="btnMult" linkSize="1" pref="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="btnCE" linkSize="3" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnC" linkSize="3" pref="68" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnBS" linkSize="3" min="-2" pref="76" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btn7" linkSize="1" alignment="1" pref="76" max="32767" attributes="0"/>
+                                  <Component id="btn4" linkSize="1" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="btn1" linkSize="1" alignment="1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btn0" linkSize="1" pref="76" max="32767" attributes="0"/>
+                                  <Component id="btn2" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btn5" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btn8" linkSize="1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="btn6" linkSize="1" pref="74" max="32767" attributes="0"/>
+                                  <Component id="btnPonto" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btn3" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btn9" linkSize="1" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="btnSoma" linkSize="1" pref="75" max="32767" attributes="0"/>
+                                  <Component id="btnIgual" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btnSub" linkSize="1" max="32767" attributes="0"/>
+                                  <Component id="btnMult" linkSize="1" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="Exponecial" min="-2" pref="80" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Percentual" min="-2" pref="76" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="Raiz" min="-2" pref="76" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnDiv" linkSize="3" max="32767" attributes="0"/>
+                          </Group>
                       </Group>
                   </Group>
-                  <Component id="lblValor" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="180" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="313" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,17 +91,22 @@
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Component id="lblValor" min="-2" pref="18" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
               <Component id="txtResultado" min="-2" pref="80" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="btnBS" linkSize="4" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
                   <Component id="btnC" linkSize="4" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
                   <Component id="btnCE" linkSize="4" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="btnDiv" linkSize="4" min="-2" pref="72" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <EmptySpace pref="50" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Exponecial" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
+                  <Component id="Raiz" alignment="3" min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="btnDiv" linkSize="4" alignment="3" pref="72" max="32767" attributes="0"/>
+                  <Component id="Percentual" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                       <Component id="btn8" linkSize="2" alignment="3" max="32767" attributes="0"/>
@@ -121,7 +141,7 @@
                       <Component id="btnPonto" linkSize="2" alignment="3" min="-2" pref="62" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -248,11 +268,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="&lt;-"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBSActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnC">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnDiv">
       <Properties>
@@ -266,6 +292,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="CE"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCEActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtResultado">
       <Properties>
@@ -279,6 +308,30 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="Raiz">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#x221a;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RaizActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Exponecial">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="X&#xb2;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ExponecialActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Percentual">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="%"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PercentualActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
