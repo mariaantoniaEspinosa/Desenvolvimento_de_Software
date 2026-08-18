@@ -451,6 +451,7 @@ public class calculadora extends javax.swing.JFrame {
         txtResultado.setText("0");
         lblValor.setText("");
         //apaga tudo
+        
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnCEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCEActionPerformed
