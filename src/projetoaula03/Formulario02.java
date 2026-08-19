@@ -44,8 +44,8 @@ public class Formulario02 extends javax.swing.JFrame {
         chkAstronomia = new javax.swing.JCheckBox();
         chkEsportes = new javax.swing.JCheckBox();
         btnInteresses = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        btnidioma = new javax.swing.JLabel();
+        cmbIdioma = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,9 +78,9 @@ public class Formulario02 extends javax.swing.JFrame {
 
         btnInteresses.setText("Interesses");
 
-        jLabel3.setText("jLabel3");
+        btnidioma.setText("Idioma");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Espanhol", "Inglês", "Português" }));
+        cmbIdioma.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Espanhol", "Inglês", "Português" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -113,10 +113,10 @@ public class Formulario02 extends javax.swing.JFrame {
                                                 .addComponent(btnInteresses)
                                                 .addGap(18, 18, 18))
                                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                                .addComponent(jLabel3)
+                                                .addComponent(btnidioma)
                                                 .addGap(32, 32, 32)))
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(cmbIdioma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(layout.createSequentialGroup()
                                                 .addComponent(chkTecnologia)
                                                 .addGap(18, 18, 18)
@@ -148,8 +148,8 @@ public class Formulario02 extends javax.swing.JFrame {
                     .addComponent(btnInteresses))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnidioma)
+                    .addComponent(cmbIdioma, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(17, 17, 17))
@@ -184,7 +184,7 @@ public class Formulario02 extends javax.swing.JFrame {
     "Alerta", 
     JOptionPane.INFORMATION_MESSAGE);
         
-        
+        JOptionPane.showMessageDialog(null, "Idioma selecionado: " +cmbIdioma.getSelectedItem(), "Alerta", JOptionPane.INFORMATION_MESSAGE);
         if(rdo_Masculino.isSelected()){
             sexo = 'M';
             Pessoa p = new Pessoa(txtNome.getText(), sexo, "Português");
@@ -231,13 +231,13 @@ public class Formulario02 extends javax.swing.JFrame {
     private javax.swing.ButtonGroup btnGrp_Sexo;
     private javax.swing.JLabel btnInteresses;
     private javax.swing.JButton btnSalvar;
+    private javax.swing.JLabel btnidioma;
     private javax.swing.JCheckBox chkAstronomia;
     private javax.swing.JCheckBox chkEsportes;
     private javax.swing.JCheckBox chkTecnologia;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> cmbIdioma;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JRadioButton rdo_Feminino;
     private javax.swing.JRadioButton rdo_Masculino;
