@@ -43,7 +43,9 @@ public class Formulario02 extends javax.swing.JFrame {
         chkTecnologia = new javax.swing.JCheckBox();
         chkAstronomia = new javax.swing.JCheckBox();
         chkEsportes = new javax.swing.JCheckBox();
+        btnInteresses = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,7 +76,11 @@ public class Formulario02 extends javax.swing.JFrame {
 
         chkEsportes.setText("esportes");
 
+        btnInteresses.setText("Interesses");
+
         jLabel3.setText("jLabel3");
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Espanhol", "Inglês", "Português" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -95,18 +101,26 @@ public class Formulario02 extends javax.swing.JFrame {
                                 .addComponent(btnSalvar))
                             .addComponent(txtNome)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(75, Short.MAX_VALUE)
+                        .addContainerGap(61, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jScrollPane1)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(rdo_Feminino)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(chkTecnologia)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(chkAstronomia)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(btnInteresses)
+                                                .addGap(18, 18, 18))
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addComponent(jLabel3)
+                                                .addGap(32, 32, 32)))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(chkTecnologia)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(chkAstronomia)))))
                                 .addGap(18, 18, 18)
                                 .addComponent(chkEsportes)))))
                 .addGap(65, 65, 65))
@@ -131,10 +145,14 @@ public class Formulario02 extends javax.swing.JFrame {
                     .addComponent(chkTecnologia)
                     .addComponent(chkAstronomia)
                     .addComponent(chkEsportes)
-                    .addComponent(jLabel3))
-                .addGap(35, 35, 35)
+                    .addComponent(btnInteresses))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addGap(17, 17, 17))
         );
 
         pack();
@@ -160,6 +178,12 @@ public class Formulario02 extends javax.swing.JFrame {
         else{
             esportes = false;
         }
+        
+        JOptionPane.showMessageDialog(null, 
+    "Tecnologia: " + tecnologia + "\nAstronomia: " + astronomia + "\nEsportes: " + esportes, 
+    "Alerta", 
+    JOptionPane.INFORMATION_MESSAGE);
+        
         
         if(rdo_Masculino.isSelected()){
             sexo = 'M';
@@ -205,10 +229,12 @@ public class Formulario02 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup btnGrp_Sexo;
+    private javax.swing.JLabel btnInteresses;
     private javax.swing.JButton btnSalvar;
     private javax.swing.JCheckBox chkAstronomia;
     private javax.swing.JCheckBox chkEsportes;
     private javax.swing.JCheckBox chkTecnologia;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
