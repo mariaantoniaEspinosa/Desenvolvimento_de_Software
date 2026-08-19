@@ -40,15 +40,18 @@
                                   <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="lblNome" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblDataNascimento" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblSexo" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblMatricula" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblCurso" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblEndereco" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblEstado" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="lblTelefone" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="lblNome" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblDataNascimento" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblSexo" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblMatricula" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblCurso" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblEndereco" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblEstado" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="lblTelefone" alignment="0" min="-2" pref="93" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="jLabel2" alignment="0" min="-2" pref="37" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -60,6 +63,7 @@
                                       <Component id="txtCurso" max="32767" attributes="0"/>
                                       <Component id="txtEndereco" max="32767" attributes="0"/>
                                       <Component id="txtTelefone" max="32767" attributes="0"/>
+                                      <Component id="txtCPF" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -119,7 +123,12 @@
                   <Component id="lblTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="btnCadastrar" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
@@ -279,6 +288,13 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="ALUNOS CADASTRADOS"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CPF"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="txtCPF">
     </Component>
   </SubComponents>
 </Form>

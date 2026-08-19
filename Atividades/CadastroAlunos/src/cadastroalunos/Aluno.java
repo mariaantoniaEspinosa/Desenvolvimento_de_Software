@@ -6,10 +6,10 @@ public class Aluno {
     private String sexo;
     private int matricula;
     private String curso;
-    private String cpf;
     private String endereco;
     private String estado;
     private String telefone;
+    private String CPF;
 
     public Aluno(String nomeCompleto, String dataNascimento, String sexo, int matricula, String curso, String cpf, String endereco, String estado, String telefone) {
         this.nomeCompleto = nomeCompleto;
@@ -17,10 +17,10 @@ public class Aluno {
         this.sexo = sexo;
         this.matricula = matricula;
         this.curso = curso;
-        this.cpf = cpf;
         this.endereco = endereco;
         this.estado = estado;
         this.telefone = telefone;
+        this.CPF = cpf;
     }
 
     public String getNomeCompleto() {
@@ -43,10 +43,6 @@ public class Aluno {
         return curso;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
     public String getEndereco() {
         return endereco;
     }
@@ -59,5 +55,8 @@ public class Aluno {
         return telefone;
     }
     
+    public String getCPF(){
+        return CPF;
+    }
     
 }
