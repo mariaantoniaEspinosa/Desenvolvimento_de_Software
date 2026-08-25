@@ -4,6 +4,8 @@
  */
 package cadastroalunos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author manto
@@ -195,6 +197,36 @@ public class TelaCadastro extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadastrarActionPerformed
+        
+        if(txtEndereco.getText().isEmpty()){
+            JOptionPane.showMessageDialog(this, "Preencha o endereço");
+            return;
+        }
+        
+        String endereco = txtEndereco.getText();
+        String [ ] partes = endereco.split(", ");
+        
+        if(partes.length != 5){
+            JOptionPane.showMessageDialog(this, "Informe o endereço completo");
+            return;
+        }
+        
+        
+        if(txaAreaAlunos.getText().contains(txtMatricula.getText())){
+            JOptionPane.showMessageDialog(this, "Matricula já cadastrada");
+            return;
+        }
+        
+        int matricula = Integer.parseInt(txtMatricula.getText());
+        
+        String data = txtDataNascimento.getText();
+        if(data.length()!= 10 || data.charAt(2) != '/' || data.charAt(5) != '/'){
+            JOptionPane.showMessageDialog(this, "A data deve estar no formato DD/MM/AAAA");
+            return;
+        }
+        
+        
+        
         Aluno aluno = new Aluno(
             txtNome.getText(),
             txtDataNascimento.getText(),
@@ -218,6 +250,16 @@ public class TelaCadastro extends javax.swing.JFrame {
         aluno.getTelefone() + "\n" +
         aluno.getCPF() + ";"        
     );
+        
+        txtNome.setText("");
+        txtDataNascimento.setText("");
+        txtMatricula.setText("");
+        txtCurso.setText("");
+        txtEndereco.setText("");
+        txtTelefone.setText("");
+        txtCPF.setText("");
+        cbmSexo.setSelectedIndex(0);
+        cbmEstado.setSelectedIndex(0);
         
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
